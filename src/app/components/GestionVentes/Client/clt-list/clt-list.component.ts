@@ -37,12 +37,14 @@ export class CltListComponent implements OnInit {
 
   edit(client: Client) {
     this.clientService.populateForm(client);
-    this.router.navigateByUrl('/client/edit');
+    this.router.navigateByUrl('/clients/edit');
+    this.getAllClients();
+    
   }
 
-  delete(client) {
+  delete(id) {
     if (this.confimDelete()) {
-      this.clientService.delete(client.id)
+      this.clientService.delete(id)
         .subscribe(() => {
           //this.fournisseurs = this.fournisseurs.filter(fournisseur=>fournisseur.id!=id);
           this.getAllClients();

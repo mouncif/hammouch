@@ -41,13 +41,14 @@ export class PrdListComponent implements OnInit {
   edit(produit: Produit) {
     this.produitService.populateForm(produit);
     this.router.navigateByUrl('/produits/edit');
+    this.getAllProduits();
   }
 
   delete(id) {
     if (this.confimDelete()) {
       this.produitService.delete(id)
         .subscribe(() => {
-          this.produits = this.produits.filter(produit=>produit.id!=id);
+          //this.produits = this.produits.filter(produit=>produit.id!=id);
           this.getAllProduits();
         });
     }

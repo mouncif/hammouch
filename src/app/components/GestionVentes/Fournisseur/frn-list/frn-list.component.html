@@ -62,10 +62,11 @@
     <ng-container matColumnDef="Actions">
       <th mat-header-cell *matHeaderCellDef > Actions </th>
       <mat-cell *matCellDef="let row">
-        <button class="fa fa-trash" mat-icon-button color="warn" (click)="delete(fournisseur)">
+        <button mat-icon-button color="warn" (click)="delete(row.id)"><mat-icon>delete_outline</mat-icon>
+          
           
         </button>
-        <button class="fa fa-pencil" mat-icon-button color="warn" (click)="edit(fournisseur)">
+        <button mat-icon-button color="primary" (click)="edit(row)"><mat-icon>edit</mat-icon>
         </button>
       </mat-cell>
     </ng-container>

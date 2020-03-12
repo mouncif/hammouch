@@ -38,11 +38,12 @@ export class FrnListComponent implements OnInit {
   edit(fournisseur: Fournisseur) {
     this.fournisseurService.populateForm(fournisseur);
     this.router.navigateByUrl('/fournisseurs/edit');
+    this.getAllFournisseurs();
   }
 
-  delete(fournisseur: Fournisseur) {
+  delete(id) {
     if (this.confimDelete()) {
-      this.fournisseurService.delete(fournisseur)
+      this.fournisseurService.delete(id)
         .subscribe(() => {
           //this.fournisseurs = this.fournisseurs.filter(fournisseur=>fournisseur.id!=id);
           this.getAllFournisseurs();
