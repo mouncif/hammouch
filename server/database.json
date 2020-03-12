@@ -1,0 +1,124 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "nom": "Hammouch",
+      "prenom": "ayoub",
+      "statut": "online",
+      "photo": "https://via.placeholder.com/150",
+      "tel": "0666666666",
+      "email": "hammouch.ayoub@yahoo.com",
+      "adresse": "Cité universitaire, Béni mellal",
+      "ville": "Béni mellal"
+    },
+    {
+      "id": 2,
+      "nom": "customer12",
+      "prenom": "",
+      "statut": "",
+      "photo": "",
+      "tel": "",
+      "email": "",
+      "adresse": "",
+      "ville": ""
+    }
+  ],
+  "fournisseurs": [
+    {
+      "id": 1,
+      "nom": "fournisseur1",
+      "nomCourt": "frn1",
+      "ville": "Safi",
+      "adresse": "Bvrd Hassan 2, Safi ",
+      "telFix": "0524010203",
+      "telMobile": "0611223344",
+      "telFax": "0544556677",
+      "email": "fournisseur@gmail.com"
+    },
+    {
+      "id": 2,
+      "nom": "testman",
+      "nomCourt": "",
+      "ville": "",
+      "adresse": "",
+      "telFix": "",
+      "telMobile": "",
+      "telFax": "",
+      "email": ""
+    }
+  ],
+  "produits": [
+    {
+      "id": 1,
+      "nom": "Produit1",
+      "nomCourt": "Prd1",
+      "prixBase": "10",
+      "prixVente": "30",
+      "maxRemise": "0.25",
+      "unite": "DH",
+      "image": "https://via.placeholder.com/150",
+      "qteInitial": "100",
+      "qteActuel": "500"
+    },
+    {
+      "id": 2,
+      "nom": null,
+      "nomCourt": null,
+      "prixBase": null,
+      "prixVente": null,
+      "maxRemise": null,
+      "unite": null,
+      "image": null,
+      "qteInitial": null,
+      "qteActuel": null
+    },
+    {
+      "id": 3,
+      "nom": "",
+      "nomCourt": "hhhhhhhhh",
+      "prixBase": "111",
+      "prixVente": "",
+      "maxRemise": "10",
+      "unite": "",
+      "image": "",
+      "qteInitial": "",
+      "qteActuel": ""
+    },
+    {
+      "id": 4,
+      "nom": "",
+      "nomCourt": "",
+      "prixBase": "",
+      "prixVente": "",
+      "maxRemise": "",
+      "unite": "",
+      "image": "",
+      "qteInitial": "",
+      "qteActuel": ""
+    },
+    {
+      "id": 5,
+      "nom": "stttst",
+      "nomCourt": "jhb",
+      "prixBase": "565",
+      "prixVente": "555",
+      "maxRemise": "",
+      "unite": "",
+      "image": "",
+      "qteInitial": "",
+      "qteActuel": ""
+    },
+    {
+      "id": 6,
+      "nom": "",
+      "nomCourt": "",
+      "prixBase": "",
+      "prixVente": "",
+      "maxRemise": "",
+      "unite": "",
+      "image": "",
+      "qteInitial": "",
+      "qteActuel": ""
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>Gestion des produits</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<form [formGroup]="produitService.form" class="normal-form" (submit)="onSubmit()">
+    <mat-grid-list cols="2" rowHeight="300px">
+        <mat-grid-tile>
+            <div class="controles-container">
+                <input type="hidden" formControlName="id">
+                <mat-form-field>
+                    <input formControlName="nom" matInput placeholder="Nom*">
+                    <mat-error>This field is mandatory.</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="nomCourt" matInput placeholder="Nom Court">
+                    <mat-error>Invalid.</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="prixBase" matInput placeholder="Prix Base">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="prixVente" matInput placeholder="Prix Vente">
+                </mat-form-field>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="controles-container">
+                <mat-form-field>
+                    <input formControlName="maxRemise" matInput placeholder="Max Remise">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="unite" matInput placeholder="Unite">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="qteInitial" matInput placeholder="Quantite Initial">
+                </mat-form-field>
+                <mat-form-field>
+                    <input formControlName="qteActuel" matInput placeholder="Quantite Actuel">
+                </mat-form-field>
+                
+                
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <div class="button-row">
+        <button mat-raised-button color="primary" type="submit" [disabled]="produitService.form.invalid">Submit</button>
+        <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
+    </div>
+</form>
