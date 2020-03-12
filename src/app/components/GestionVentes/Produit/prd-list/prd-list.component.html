@@ -1,3 +1,13 @@
+<div class="navigation-tabs">
+  <ul class="nav nav-tabs">
+    <li routerLink="/" role="presentation" [routerLinkActive]="['is-active']">
+      <a href="#" aria-controls="home" role="tab" data-toggle="tab">Liste des produits</a>
+    </li>
+    <li routerLink="/produits/add" role="presentation" [routerLinkActive]="['is-active']">
+      <a routerLink="/produits/add"  href="#" aria-controls="profile" role="tab" data-toggle="tab">Ajouter produits</a>
+    </li>
+  </ul>
+</div>
 <table mat-table [dataSource]="PrdList" matSort class="mat-elevation-z8">
 
     <ng-container matColumnDef="id">

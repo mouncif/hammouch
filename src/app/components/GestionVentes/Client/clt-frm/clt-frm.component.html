@@ -1,3 +1,13 @@
+<div class="navigation-tabs">
+    <ul class="nav nav-tabs">
+      <li routerLink="/" role="presentation">
+        <a routerLink="/clients" href="#" aria-controls="home" role="tab" data-toggle="tab">Liste des clients</a>
+      </li>
+      <li routerLink="/clients/add" role="presentation" [routerLinkActive]="['active']">
+        <a href="#" aria-controls="profile" role="tab" data-toggle="tab">Ajouter clients</a>
+      </li>
+    </ul>
+  </div>
 <mat-toolbar color="success">
     <mat-toolbar-row>
       <span>Gestion des clients</span>

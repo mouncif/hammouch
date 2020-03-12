@@ -9,7 +9,7 @@ import { CltListComponent } from './components/GestionVentes/Client/clt-list/clt
 
 
 const routes: Routes = [
-  { path: 'produits', component: PrdFormComponent},
+  { path: 'produits', component: PrdListComponent},
 /*{ path: 'produits', component: PrdListComponent,children:[
     {path: '', component: PrdListComponent}
   ]},*/

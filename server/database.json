@@ -5,7 +5,7 @@
       "nom": "Hammouch",
       "prenom": "ayoub",
       "statut": "online",
-      "photo": "https://via.placeholder.com/150",
+      "photo": "",
       "tel": "0666666666",
       "email": "hammouch.ayoub@yahoo.com",
       "adresse": "Cité universitaire, Béni mellal",
@@ -14,6 +14,28 @@
     {
       "id": 2,
       "nom": "customer12",
+      "prenom": "",
+      "statut": "",
+      "photo": "",
+      "tel": "",
+      "email": "",
+      "adresse": "",
+      "ville": ""
+    },
+    {
+      "id": 3,
+      "nom": null,
+      "prenom": null,
+      "statut": null,
+      "photo": null,
+      "tel": null,
+      "email": null,
+      "adresse": null,
+      "ville": null
+    },
+    {
+      "id": 4,
+      "nom": "hi",
       "prenom": "",
       "statut": "",
       "photo": "",
@@ -56,7 +78,7 @@
       "prixVente": "30",
       "maxRemise": "0.25",
       "unite": "DH",
-      "image": "https://via.placeholder.com/150",
+      "image": "",
       "qteInitial": "100",
       "qteActuel": "500"
     },

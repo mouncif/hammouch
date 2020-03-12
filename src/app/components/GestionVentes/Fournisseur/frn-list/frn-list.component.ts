@@ -14,7 +14,7 @@ export class FrnListComponent implements OnInit {
   fournisseurs: Fournisseur[] = [];
   FrnList = new MatTableDataSource<Fournisseur>();
 
-  displayedColumns: string[] = ['nom', 'nomCourt', 'ville', 'adresse', 'telFix', 'telMobile', 'telFax', 'email',  'Actions'];
+  displayedColumns: string[] = ['id','nom', 'nomCourt', 'ville', 'adresse', 'telFix', 'telMobile', 'telFax', 'email',  'Actions'];
 
   constructor(private fournisseurService: FournisseurService,
     private router: Router) {
@@ -40,12 +40,13 @@ export class FrnListComponent implements OnInit {
     this.router.navigateByUrl('/fournisseurs/edit');
   }
 
-  delete(fournisseur) {
+  delete(fournisseur: Fournisseur) {
     if (this.confimDelete()) {
-      this.fournisseurService.delete(fournisseur.id)
+      this.fournisseurService.delete(fournisseur)
         .subscribe(() => {
           //this.fournisseurs = this.fournisseurs.filter(fournisseur=>fournisseur.id!=id);
           this.getAllFournisseurs();
+          console.log('delete ca marche')
         });
     }
   }

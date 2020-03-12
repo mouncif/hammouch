@@ -1,3 +1,13 @@
+<div class="navigation-tabs">
+    <ul class="nav nav-tabs">
+      <li routerLink="/" role="presentation">
+        <a routerLink="/fournisseurs" href="#" aria-controls="home" role="tab" data-toggle="tab">Liste des fournisseurs</a>
+      </li>
+      <li routerLink="/fournisseurs/add" role="presentation" [routerLinkActive]="['active']">
+        <a href="#" aria-controls="profile" role="tab" data-toggle="tab">Ajouter fournisseur</a>
+      </li>
+    </ul>
+  </div>
 <mat-toolbar color="warn">
     <mat-toolbar-row>
       <span>Gestion des fournisseurs</span>

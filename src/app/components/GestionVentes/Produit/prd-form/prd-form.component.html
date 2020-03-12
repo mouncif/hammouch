@@ -1,4 +1,14 @@
-<mat-toolbar color="primary">
+<div class="navigation-tabs">
+    <ul class="nav nav-tabs">
+      <li routerLink="/" role="presentation">
+        <a routerLink="/produits" href="#" aria-controls="home" role="tab" data-toggle="tab">Liste des produits</a>
+      </li>
+      <li routerLink="/produits/add" role="presentation" [routerLinkActive]="['active']">
+        <a href="#" aria-controls="profile" role="tab" data-toggle="tab">Ajouter produits</a>
+      </li>
+    </ul>
+  </div>
+  <mat-toolbar color="primary">
     <mat-toolbar-row>
       <span>Gestion des produits</span>
     </mat-toolbar-row>
