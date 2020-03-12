@@ -5,7 +5,7 @@
       "nom": "Nahri",
       "prenom": "Abderrahim",
       "statut": "en ligne",
-      "photo": "",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/120px-User_icon_2.svg.png",
       "tel": "0661626364",
       "email": "nahri@gmail.com",
       "adresse": "Massira2, Béni Mellal ",
@@ -34,7 +34,7 @@
       "prixVente": "200",
       "maxRemise": "50",
       "unite": "DH",
-      "image": "",
+      "image": "https://pngimage.net/wp-content/uploads/2018/06/icon-product-png-1.png",
       "qteInitial": "500",
       "qteActuel": "230"
     }

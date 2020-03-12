@@ -19,6 +19,10 @@
             <div class="controles-container">
                 <input type="hidden" formControlName="id">
                 <mat-form-field>
+                    <input formControlName="photo" matInput placeholder="Photo">
+                    <mat-error>This field is mandatory.</mat-error>
+                </mat-form-field>
+                <mat-form-field>
                     <input formControlName="nom" matInput placeholder="Nom*">
                     <mat-error>This field is mandatory.</mat-error>
                 </mat-form-field>
@@ -29,13 +33,14 @@
                 <mat-form-field>
                     <input formControlName="statut" matInput placeholder="Statut">
                 </mat-form-field>
-                <mat-form-field>
-                    <input formControlName="tel" matInput placeholder="Tel">
-                </mat-form-field>
+                
             </div>
         </mat-grid-tile>
         <mat-grid-tile>
             <div class="controles-container">
+                <mat-form-field>
+                    <input formControlName="tel" matInput placeholder="Tel">
+                </mat-form-field>
                 <mat-form-field>
                     <input formControlName="email" matInput placeholder="Email">
                 </mat-form-field>

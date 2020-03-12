@@ -19,6 +19,10 @@
             <div class="controles-container">
                 <input type="hidden" formControlName="id">
                 <mat-form-field>
+                    <input formControlName="image" matInput placeholder="Image">
+                    <mat-error>This field is mandatory.</mat-error>
+                </mat-form-field>
+                <mat-form-field>
                     <input formControlName="nom" matInput placeholder="Nom*">
                     <mat-error>This field is mandatory.</mat-error>
                 </mat-form-field>

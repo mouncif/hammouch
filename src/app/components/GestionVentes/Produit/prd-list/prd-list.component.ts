@@ -14,7 +14,7 @@ export class PrdListComponent implements OnInit {
   produits: Produit[] = [];
   PrdList = new MatTableDataSource<Produit>();
 
-  displayedColumns: string[] = ['nom', 'nomCourt', 'prixBase', 'prixVente', 'maxRemise', 'unite', 'image', 'qteInitial', 'qteActuel', 'Actions'];
+  displayedColumns: string[] = ['image', 'id', 'nom', 'nomCourt', 'prixBase', 'prixVente', 'maxRemise', 'unite', 'qteInitial', 'qteActuel', 'Actions'];
 
 
   constructor(private produitService: ProduitService,

@@ -14,7 +14,7 @@ export class CltListComponent implements OnInit {
   clients: Client[] = [];
   CltList = new MatTableDataSource<Client>();
 
-  displayedColumns: string[] = ['nom', 'prenom', 'statut', 'tel', 'email', 'adresse', 'ville',  'Actions'];
+  displayedColumns: string[] = ['photo', 'id', 'nom', 'prenom', 'statut', 'tel', 'email', 'adresse', 'ville',  'Actions'];
 
   constructor(private clientService: ClientService,
     private router: Router) {
